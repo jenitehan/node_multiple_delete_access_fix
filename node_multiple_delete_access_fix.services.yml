@@ -1,0 +1,5 @@
+services:
+  node_multiple_delete_access_fix.route_subscriber:
+    class: Drupal\node_multiple_delete_access_fix\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

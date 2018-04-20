@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains node_multiple_delete_access_fix.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function node_multiple_delete_access_fix_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the node_multiple_delete_access_fix module.
+    case 'help.page.node_multiple_delete_access_fix':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Overrides the access to delete multiple nodes in bulk from views bulk operations.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
