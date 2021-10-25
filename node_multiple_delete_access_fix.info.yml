@@ -2,6 +2,7 @@ name: 'Node Multiple Delete Access Fix'
 type: module
 description: 'Overrides the access to delete multiple nodes in bulk from views bulk operations.'
 core: 8.x
+core_version_requirement: ^8 || ^9
 package: 'Access control'
 dependencies:
   - node
